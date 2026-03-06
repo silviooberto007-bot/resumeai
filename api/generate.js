@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         'X-Title': 'ResumeAI'
       },
       body: JSON.stringify({
-        model: 'meta-llama/llama-3.3-8b-instruct:free',
+        model: 'meta-llama/llama-4-scout:free',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 2000
       })
