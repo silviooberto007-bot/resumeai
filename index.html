@@ -284,7 +284,7 @@
       clearInterval(interval);
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || 'Server error');
-      let html = result.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      let html = result.choices?.[0]?.message?.content || '';
       html = html.replace(/```html/gi,'').replace(/```/g,'').trim();
       document.getElementById('loading').classList.remove('active');
       document.getElementById('result-card').classList.add('active');
