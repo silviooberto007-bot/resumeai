@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         'X-Title': 'ResumeAI'
       },
       body: JSON.stringify({
-        model: 'mistralai/mistral-small-3.1-24b-instruct:free',
+        model: 'deepseek/deepseek-r1-zero:free',
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 2000
       })
